@@ -1,17 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactDOM from 'react-dom'; //Integração do react com a árvore DOOM
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+import App from './App';
+
+
+ReactDOM.render( //Recebe um conteúdo Jsx e coloca dentro de um elemento html
+  <App />, // App -> Componente -> Funcao que retorna um conteudo HTML ou conteudo Jsx
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
